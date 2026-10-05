@@ -1,12 +1,16 @@
-# 🚴 Adventure Works – SQL Data Analysis Project
+# 🚴 Adventure Works SQL Data Analysis Project
 
 ## 📌 Project Overview
 
-This project is a practical **SQL Data Analysis project** based on the Adventure Works dataset.
+This project is a practical **SQL Data Analysis project based on the Adventure Works dataset**.
 
-The objective of this project is to combine sales data, enrich the sales table using customer and product information, create analytical fields, calculate business metrics, and perform sales analysis using MySQL.
+The project demonstrates how raw Excel datasets can be loaded into MySQL using Python and then analyzed using SQL.
 
-The project focuses on transforming raw sales data into meaningful business information that can be used for reporting, analysis, and dashboard development.
+The complete workflow is:
+
+**Excel Dataset → Python/Pandas → MySQL Database → SQL Transformation → Data Analysis**
+
+The project includes multiple dimension and fact tables related to customers, products, dates, sales territories, and internet sales.
 
 ---
 
@@ -14,52 +18,84 @@ The project focuses on transforming raw sales data into meaningful business info
 
 Adventure Works Cycles is a multinational manufacturing company that manufactures and sells metal and composite bicycles across North American, European, and Asian markets.
 
-The company aims to:
+The company focuses on:
 
-- Expand its market share
-- Target its best customers
-- Increase product availability through its website
-- Reduce the cost of sales through lower production costs
+- Expanding market share
+- Targeting its best customers
+- Increasing product availability through its website
+- Reducing cost of sales through lower production costs
 
 ---
 
-## 🎯 Project Objectives
+# 🎯 Project Objectives
 
-The major objectives of this project are:
+The main objectives of this project are:
 
-- Combine multiple sales datasets
-- Enrich sales data using lookup operations
+- Load Excel datasets into MySQL
+- Create an Adventure Works database
+- Combine sales data from multiple fact tables
+- Merge product-related information
+- Perform customer and product lookups
 - Create date-related analytical fields
 - Calculate Sales Amount
 - Calculate Production Cost
 - Calculate Profit
-- Perform monthly, yearly, and quarterly sales analysis
-- Analyze business performance by products, customers, and regions
-- Prepare data for visualization and dashboard reporting
+- Perform monthly sales analysis
+- Perform yearly sales analysis
+- Perform quarterly sales analysis
+- Compare Sales Amount and Production Cost
+- Prepare data for reporting and visualization
 
 ---
 
-## 🗂️ Dataset
+# 🛠️ Tools & Technologies
 
-The project uses the following Adventure Works datasets:
+### Database
+- MySQL
 
-### Dimension Tables
+### Programming
+- Python
 
-- `DimCustomer`
-- `DimDate`
-- `DimProduct`
-- `DimProductCategory`
-- `DimProductSubCategory`
-- `DimSalesTerritory`
+### Python Libraries
+- Pandas
+- OpenPyXL
+- MySQL Connector
 
-### Fact Tables
+### Data Sources
+- Microsoft Excel (`.xlsx`)
 
-- `FactInternetSales`
-- `Fact_Internet_Sales_New`
-
-The two fact tables are combined to create the consolidated `Sales` table.
+### Analysis
+- SQL
+- Data Transformation
+- Data Cleaning
+- Aggregation
+- Business Analysis
 
 ---
+
+# 🔄 Project Workflow
+
+```text
+                Excel Dataset
+                      │
+                      ▼
+              Python + Pandas
+                      │
+                      ▼
+              MySQL Connector
+                      │
+                      ▼
+             MySQL Database
+             adventure_works
+                      │
+                      ▼
+             SQL Transformation
+                      │
+                      ▼
+               Sales Analysis
+                      │
+                      ▼
+              Business Insights
 
 ## 🏗️ Data Model
 
